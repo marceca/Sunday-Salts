@@ -18,9 +18,6 @@ if($firstName && $lastName && $userName && $password && $secondPassword && $age 
 	
 	mysqli_query($db, "INSERT INTO users(firstName, lastName, username, password, age, email) VALUES('$firstName','$lastName','$userName','$password','$age','$email')");
 	
-	$registered = mysqli_affected_rows($db);
-	
-	echo $registered;
 	
 } else {
 	
