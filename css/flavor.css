@@ -1,0 +1,21 @@
+#flavorPosition{
+	position:absolute;
+	top: 117px;
+	left: 335px;
+}
+#flavorImgPosition{
+	position: absolute;
+	left: 300px;
+}
+
+#flavorDescription{
+	position: absolute;
+	top: 170px;
+	left: 20px;
+}
+
+#flavorImg{
+	left: 300px;
+	height: 150px;
+	width: 150px;
+}

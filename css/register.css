@@ -1,0 +1,102 @@
+body{
+	background-color:#7d4627;
+}
+div{
+	<!--border-style: solid;-->
+}
+#header{
+	text-align: center;
+	line-height: 10px;
+	position: absolute;
+	top: 3px;
+	left: 5px;
+	height: 77px;
+	width: 1375px;
+	background-color: #a8b6bf;
+}
+#fontSize{
+	color: black;
+	font-size: 40px;
+}
+#navigation{
+	position: absolute;
+	top: 80px;
+	left: 5px;
+	width: 1513;
+	height: 25px;
+	background-color: #edd9c0;
+	border: 1px solid black;	
+}
+
+#registerForm{
+	position:absolute;
+	text-align: center;
+	top:100px;
+	width: 99%;
+	height: 500px;
+}
+#mid{
+	position:absolute;
+	top: 107px;
+	left: 5px;
+	height:569px;
+	width: 1375px;
+	background-color:#edd9c0;
+}
+input{
+	border-width:3px;
+}
+#rightPanel{
+	position:absolute;
+	top:107px;
+	right:7px;
+	height: 623px;
+	width: 140px;
+	background-color:edd9c0;
+}
+#topRightBlock{
+	position: absolute;
+	top: 3px;
+	right: 7px;
+	width: 140px;
+	height: 77px;
+	background: #a8b6bf;
+}
+#footer{
+	position:absolute;
+	left:5px;
+	top: 676px;
+	height:54px;
+	width:1375px;
+	background-color:#edd9c0;
+}
+.center{
+	text-align:center;
+}
+
+/* NAVIGATION */
+
+nav{
+	float: left;
+}
+
+nav ul{
+	margin: 0;
+}
+
+nav ul li {
+	display: inline;
+	margin-right: 10px;
+}
+
+nav ul li a{
+	text-decoration:none;
+}
+
+nav ul li.current{
+	font-weight: bold;
+}
+
+nav ul li a.last{
+	border-right: 0;
+}
