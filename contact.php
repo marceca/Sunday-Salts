@@ -4,26 +4,19 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 		<title>Welcome to Sunday Salts</title>
 		<link type = "text/css" rel = "stylesheet" href = "css/sundaySalts.css"></link>
-		<link type = "text/css" rel = "stylesheet" href = "css/flavor.css"></link>
+		<link type = "text/css" rel = "stylesheet" href = "css/contact.css"></link>
 	</head>
 	
 	<body>
-		<div id="header"><h2 id="fontSize">Sunday Salts</h2></div>
-			<?php include 'php/nav.php';?>
-		<div class="center">
-			<div id="mid">
-				<h3>Please choose a flavor to see more.</h3>
-				<div>
-					<a id="pistachio" href="#">Pistachio</a>
-					<a id="strawberry" href="#">Strawberry</a>
-					<a id="blueberry" href="#">Blueberry</a>
-				</div>
-				<div id="flavorPosition">
-					<div id="flavorImgPosition">
-						<div id="flavorImg"></div>
-					</div>
-					<div id="flavorDescription"></div>
-				</div>
+		<div id="header"><h2 id="fontSize" >Contact Information</h2></div>
+			<?php require 'php/nav.php'; ?>
+		<div id="mid">
+			<div id="contactDiv">
+				<p>Number: 555-555-5555</p>
+				<p>Address: 10-10 phillip st</p>
+				<p>City: oakland</p>
+				<p>State: New Jersey</p>
+				<p>Email: SundaySalts@gmail.com</p>
 			</div>
 		</div>
 		<div class="dots" id="rightPanel">
@@ -43,6 +36,5 @@
 		</div>
 		<div class="dots" id="footer">&copy;Sunday Salts</div>
 		<script src="jquery/highlight.js"></script>
-		<script src="jquery/flavorDescription.js"></script>
 	</body>
 <html>
