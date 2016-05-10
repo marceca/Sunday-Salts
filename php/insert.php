@@ -45,7 +45,7 @@ mysqli_close($db);
 			<div id="mainImgMove">
 				<img src="../images/allSundaySalts" id="mainImgResize" />
 			</div>
-			<p class="center">This is center stage</p>
+			<p class="center">Thank you for registering click a link above to continue onto the site!</p>
 		
 		
 		</div>
