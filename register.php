@@ -13,15 +13,19 @@
 		<div id="mid">
 			<h2 class="center">Please fill out the information below</h2>
 			<div id= "registerForm">
-				<form action="php/insert.php" method="post">
-					First name: <input type="text" name="firstName" /><br /><br />
-					Last name: <input type="text" name="lastName" /><br /><br />
-					Username: <input type="text" name="username" /><br /><br />
-					Password: <input type="password" name="password" /><br /><br />
-					Resubmit Password <input type="password" name="passwordresubmit" /><br /><br />
-					Age: <input type="text" name="age" /><br /><br />
-					Email: <input type="email" name="email" /><br /><br />
-					<input type="submit" value="Submit!" />
+				<form id = "formID"  ENCTYPE="multipart/form-data" action="insert.php" method="post">
+					<table id="tableID">
+						<tr><td width="10%">First name:</td><td> <input type="text" name="firstName" maxlength= "15" /></td></tr>
+						<tr><td width="10%">Last name:</td><td> <input type="text" name="lastName" maxlength= "15" /></td></tr>
+						<tr><td width="10%">Username:</td><td> <input type="text" name="userName" maxlength= "15" /></td></tr>
+						<tr><td width="10%">Password:</td><td> <input type="password" name="password" maxlength= "15" /></td></tr>
+						<tr><td width="10%">Resubmit Password :</td><td> <input type="password" name="passwordresubmit" maxlength= "15" /></td></tr>
+						<tr><td width="10%">Age: </td><td><input type="text" name="age" maxlength= "15" /></td></tr>
+						<tr><td width="10%">Email: </td><td><input type="email" name="email" maxlength= "50" /></td></tr>
+					</table>
+					<br />
+					<br />
+						<input id="inputID" type="submit" name="submit" value="Submit!" />
 				</form>
 			</div>
 		</div>
