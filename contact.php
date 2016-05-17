@@ -12,11 +12,11 @@
 			<?php require 'php/nav.php'; ?>
 		<div id="mid">
 			<div id="contactDiv">
-				<p>Number: 555-555-5555</p>
-				<p>Address: 10-10 phillip st</p>
-				<p>City: oakland</p>
-				<p>State: New Jersey</p>
-				<p>Email: SundaySalts@gmail.com</p>
+					<p>Number: 555-555-5555</p>
+					<p>Address: 10-10 phillip st</p>
+					<p>City: oakland</p>
+					<p>State: New Jersey</p>
+					<p>Email: SundaySalts@gmail.com</p>
 			</div>
 		</div>
 		<div class="dots" id="rightPanel">
