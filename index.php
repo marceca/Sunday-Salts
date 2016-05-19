@@ -21,7 +21,7 @@
 		<div class="dots" id="rightPanel">
 			<h4>Login</h4>
 			<div class="login">
-				<form action="login.php" method="post" >
+				<form action="login.php" method="POST" >
 					Username:<br/>
 					<input class="highlight" type="text" name="username" size=10 /><br /><br />
 					Password:<br/>
