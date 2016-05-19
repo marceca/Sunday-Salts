@@ -1,9 +1,11 @@
 <?php
+session_start();
 
-$username = $_POST['username'];
-$password = md5($_POST['password']);
+if($_POST){
+$_SESSION['username'] = $_POST['username'];
+$_SESSION['password'] = md5($_POST['password']);
 
-if($username && $password){
+if($_SESSION['username'] && $_SESSION['password']){
 	
 	$db = mysqli_connect('localhost', 'root', '', 'sundaysalts');
 
@@ -12,7 +14,7 @@ if($username && $password){
 		exit();
 	}
 	
-	$query = mysqli_query($db, "SELECT * FROM users WHERE userName = '$username'");
+	$query = mysqli_query($db, "SELECT * FROM users WHERE userName = '".$_SESSION['username']."'");
 	$numrows = mysqli_num_rows($query);
 	
 	if($numrows != 0){
@@ -20,7 +22,7 @@ if($username && $password){
 			$dbusername = $row['userName'];
 			$dbpass = $row['password'];		
 		}
-		if($username==$dbusername && $password==$dbpass){
+		if($_SESSION['username']==$dbusername && $_SESSION['password']==$dbpass){
 			
 			header("location: loggedIn.php");
 			
@@ -36,5 +38,8 @@ if($username && $password){
 } else {
 	echo "You have to type in a username and password!";
 }
-
+}else{
+	echo "Access denied!";
+	exit;
+}
 ?>
