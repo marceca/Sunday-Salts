@@ -36,10 +36,11 @@ if($firstName && $lastName && $userName && $password && $secondPassword && $age 
 						echo "That username is already taken! Please type another name.";	
 						
 					} else {
+
 							$passmd5 = md5($password);
 							mysqli_query($db, "INSERT INTO users(firstName, lastName, userName, password, age, email) VALUES('$firstName','$lastName','$userName','$passmd5','$age','$email')");
-							echo "Thank you for registering!";
-							include 'php/Nav.php';
+							echo "Thank you for registering! You may now login!";
+							header("refresh:2, url=index.php");
 					
 					}
 				}

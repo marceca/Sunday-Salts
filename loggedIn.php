@@ -1,3 +1,9 @@
+<?php
+
+include "php/session.php";
+
+?>
+
 <html>
 	<head>
 		<title>Welcome to your profile!</title>
@@ -13,6 +19,7 @@
 			<input type="file" name="image" />
 			<input type="submit"/>
 		</form>
+		<a href="php/logout.php">Logout</a>
 	</div>
 	<div id="rightPanel"></div>
 	<div id="footer">&copy;Sunday Salts</div>
