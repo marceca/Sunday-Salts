@@ -3,9 +3,9 @@ require_once "../database/db.php";
 
 
 $id               = $_REQUEST['id'];
-$newName          = $_REQUEST['newName'];
-$newEmail         = $_REQUEST['newEmail'];
-$newPassword      = $_REQUEST['newPassword'];
+$newName          = $_REQUEST['newName']; // need check for userName
+$newEmail         = $_REQUEST['newEmail']; // need check for email
+$newPassword      = $_REQUEST['newPassword']; 
 $resubmitPassword = $_REQUEST['resubmitPassword'];
 
 if($newName && $newEmail && $newPassword){
